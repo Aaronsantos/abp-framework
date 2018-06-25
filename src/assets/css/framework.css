@@ -3,14 +3,14 @@
 }
 
 .framework-container {
-    background-color: #ffffff;
+    background-color: #f3f3f2;
 }
 
 .etapa {
     width: 70vw;
     height: 100vh;
     padding-top: 10vh;
-    color: #68597d;
+    color: #8c8f99;
     margin: 0 10vw 0 18vw;
     box-sizing: border-box;
 }
@@ -19,23 +19,16 @@
     font-size: 39px;
     font-style: italic; 
     margin-bottom: 5px;
+    color: #3599b3;
 }
-
 
 .etapa .title+hr {
     width: 20%;
     margin: 0;
     border-width: 0;
     height: 3px;
-    background-color: #68597d;
-    color: #68597d;
-
-    
-}
-
-
-.etapa .etapa-container .card .title+hr {
-    width: 10%;
+    background-color: #3599b3;
+    color: #3599b3;    
 }
 
 .etapa .etapa-container {
@@ -45,32 +38,30 @@
     
     display: flex;  
     flex-flow: column wrap;
-    justify-content: flex-start;
-    
+    justify-content: flex-start;    
 }
 
 .etapas-barra {
     height: 100vh;
-    background-color: #e9defe;
+    background-color:  #50c4d1;
     width: 17vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #68597d;
+    color: white;
     position: fixed;
-    
 }
 
 .fCBar {
     width: 10vw;
     min-width: inherit;
-    background-color: #68597d;
+    background-color: #50c4d1;
     position: fixed;
     right: 0;
     top: 0;
     height: 100vh;
-    color:  #fce4e3;
-    border-left: 8px solid #f49585;
+    color:  white;
+    border-left: 8px solid #40aab1;
     /* padding-left: 1em; */
     text-align: center;
     box-sizing: border-box;
@@ -80,7 +71,7 @@
     display: flex;
     height: 80%;
     flex-direction: column;
-    color: #aea4bc;  
+    
 }
 
 .etapas-barra > .opcoes-container > button {
@@ -91,14 +82,14 @@
     font-size: 18px;
     background: none;
     border: none;
-    color: inherit;
+    color: white;
 }
 
 .etapas-barra > .opcoes-container > button:hover {
     cursor: pointer;
-    background-color: #aea4bc;
-    color: #68597d;
+    background-color: #a8c9ce;
     transition: all 0.1;
+    color: white;
 }
 
 .etapas-barra > .opcoes-container > button  i {
@@ -107,14 +98,12 @@
 }
 
 .etapas-barra > .opcoes-container > .selectedStep {
-    background-color: #68597d;
-    color: #e9defe;
+    background-color: #40aab1;
     transition: 1s all;
 }
 
 .etapas-barra > .opcoes-container > .selectedStep:hover {
-    background-color: #68597d;
-    color: #e9defe;
+    background-color: #a8c9ce;
     transition: 1s all;
 }
 
@@ -128,28 +117,30 @@
 }
 
 .etapa> .etapa-container> .card> .title {
-    color: #f8f2fc;
+    color: white;
     font-size: 30px;
 }
 
 .etapa> .etapa-container> .card > .title +hr{
     margin-bottom: 10px;
-    background-color: #f8f2fc;
+    background-color: white;
     width: 6em;
 }
 
 .objetivos {
-    background-color: #a6679c;
-    color: #f8f2fc;
+    background-color: #a8c9ce;
+    color: white;
+    font-weight: bolder;
 }
 
 .desc {
-    color: #68597d;
+    color: #8d909a;
 }
 
 .atividades {
-    background-color: #AfA5BC;
+    background-color:#3fa8b2;
     padding: 0;
+    color: white;
 }
 
 .atividades > .title, .atividades > .title+ hr {
@@ -157,8 +148,9 @@
 }
 
 .lembrete {
-    background-color: #f49585;
+    background-color: #e4956d;
     min-height: 250px;
+    color: white;
 }
 
 .objetivos ul {
@@ -167,14 +159,14 @@
 
 .objetivos >ul > li {
     margin-bottom: 1.3em;
-    border-left: solid 2px #f8f2fc;
+    border-left: solid 2px #edf0f1;
     padding-left: 1em;
     min-height: 2em;
 }
 
 .atividades > ul > li {
     
-    border-top: 2px solid #68597d;
+    border-top: 2px solid #edf0f1;
     min-height: 3em;
     padding: 0.9em 0 0 2em;
     box-sizing: border-box;
@@ -211,6 +203,45 @@
 }
 
 .fCBar > ul > li:hover {
-    background-color: #a6679c;
+    background-color: #40aab1;
     cursor: pointer;
 }
+
+#modal{
+    display:inline-block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(154,137,88,0.4); /* Black w/ opacity */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    }
+    
+    .modalContent{
+      width: 70%;
+      margin: auto;
+      max-height: 95%;
+      min-height: 90%;
+      overflow-y: auto;
+      box-sizing: border-box;
+    
+    }
+    
+    /* .infoModal .modalContainer {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 2em;
+      width: 80%;
+      margin: auto;
+    
+    } */
+    

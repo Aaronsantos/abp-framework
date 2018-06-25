@@ -7,23 +7,23 @@ class FourCbar extends Component {
                 <h1> {this.props.count} </h1>
                 
                 <ul>
-                    <li onClick={this.props.modal} id={this.props.step + "-critico"}>
-                        <i class="fas fa-puzzle-piece"></i>
+                    <li onClick={this.props.modal} id={ "btn-critico"}>
+                        <i className="fas fa-puzzle-piece"></i>
                         <br/>
                         Pensamento<br/>Crítico
                     </li>
-                    <li onClick={this.props.modal} id={this.props.step + "-criatividade"}>
-                        <i class="far fa-lightbulb"></i>
+                    <li onClick={this.props.modal} id={ "btn-criatividade"}>
+                        <i className="far fa-lightbulb"></i>
                         <br />
                         Criatividade
                     </li>
-                    <li onClick={this.props.modal} id={this.props.step + "-colaboracao"}>
-                        <i class="fas fa-people-carry"></i>
+                    <li onClick={this.props.modal} id={ "btn-colaboracao"}>
+                        <i className="fas fa-people-carry"></i>
                         <br/>
                         Colaboração
                     </li>
-                    <li onClick={this.props.modal} id={this.props.step + "-comunicacao"}>
-                        <i class="far fa-comments"></i>
+                    <li onClick={this.props.modal} id={ "btn-comunicacao"}>
+                        <i className="far fa-comments"></i>
                         <br />
                         Comunicação
                     </li>

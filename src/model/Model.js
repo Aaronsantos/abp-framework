@@ -10,7 +10,14 @@ let planejamento = {
     lembrete: {
         texto : "lorem ipsum sic amet iaheuaheauehuaheuaheuahe uahue haueahuehauehaueh a",
         img : "",
+    },
+    habilidades : {
+        "comunicacao" :  ' AEAEAEAEA',
+        "critico" : 'AEAEAEA',
+        "coolaboracao": 'AEAEAE',
+        "criatividade" : 'AEAEAEAEAE'
     }
+
 }
 
 let pesquisa = {
@@ -22,6 +29,12 @@ let pesquisa = {
     lembrete: {
         texto : "lorem ipsum sic amet iaheuaheauehuaheuaheuahe uahue haueahuehauehaueh a",
         img : "",
+    },
+    habilidades : {
+        "comunicacao" :  ' AEAEAEAEA',
+        "critico" : 'AEAEAEA',
+        "coolaboracao": 'AEAEAE',
+        "criatividade" : 'AEAEAEAEAE'
     }
 }
 
@@ -34,8 +47,15 @@ let lancamento = {
     lembrete: {
         texto : "lorem ipsum sic amet iaheuaheauehuaheuaheuahe uahue haueahuehauehaueh a",
         img : "",
+    },
+    habilidades : {
+        "comunicacao" :  '',
+        "critico" : '',
+        "coolaboracao": '',
+        "criatividade" : ''
     }
 }
+
 
 
 export const STEP = {
@@ -43,5 +63,4 @@ export const STEP = {
     "Pesquisa" : pesquisa,
     "Lançamento do projeto" : lancamento
 }
-
 
