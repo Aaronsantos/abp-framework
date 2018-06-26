@@ -7,21 +7,22 @@ export const FOURC =  {
     "criatividade" : {nome: "Criatividade", icone: "far fa-lightbulb"} 
 }
 
+
 let planejamento = {
     nome : "Planejamento",
     cont: 1,
-    desc: "uehauehauehauehaue\n auehau ehaue aue hauehaueaheuaheu aeua huaeauehaue h",
-    objetivos: ["testar", "testar", "testar"],
-    atividades: ["programar", "programar", "programar"],
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, nihil necessitatibus explicabo dolor nostrum voluptas mollitia ipsum placeat quidem omnis officiis rerum porro minima ad odit ullam voluptate neque impedit.",
+    objetivos: ["teste", "teste", "teste"],
+    atividades: ["teste", "teste", "teste"],
     lembrete: {
-        texto : "lorem ipsum sic amet iaheuaheauehuaheuaheuahe uahue haueahuehauehaueh a",
+        texto : "lorem ipsum sic amet nostrum volupta",
         img : "",
     },
     habilidades : {
-        "comunicacao" :  ' AEAEAEAEA',
-        "critico" : 'AEAEAEA',
-        "colaboracao": 'AEAEAE',
-        "criatividade" : 'AEAEAEAEAE'
+        "comunicacao" :  ' teste comunicação',
+        "critico" : 'teste critico',
+        "colaboracao": 'teste colaboração',
+        "criatividade" : 'teste criatividade'
     }
 
 }
@@ -29,45 +30,81 @@ let planejamento = {
 let pesquisa = {
     nome : "Pesquisa",
     cont: 3,
-    desc: "uehauehauehauehaue auehau ehaue aue hauehaueaheuaheu aeua huaeauehaue h uaheuaheuaehuaheuaheuaheuaheuaheuahe uaheuaehuahe uaheuaheuah u hauehaueh auu aheuah uahueaheua heua eua huah euah uaheuaheuaheuaehuaehuaheuaehauehauehauhe uehauehauehauehaue auehau ehaue aue hauehaueaheuaheu aeua huaeauehaue h uaheuaheuaehuaheuaheuaheuaheuaheuahe uaheuaehuahe uaheuaheuah u hauehaueh auu aheuah uahueaheua heua eua huah euah uaheuaheuaheuaehuaehuaheuaehauehauehauhe",
-    objetivos: ["pesquisar", "pesquisar", "pesquisar", "pesquisar muitas coisas teste", "pesquisar" ],
-    atividades: ["programar", "programar", "programar"],
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, nihil necessitatibus explicabo dolor nostrum voluptas mollitia ipsum placeat quidem omnis officiis rerum porro minima ad odit ullam voluptate neque impedit.",
+    objetivos: ["teste", "teste", "teste"],
+    atividades: ["teste", "teste", "teste"],
     lembrete: {
-        texto : "lorem ipsum sic amet iaheuaheauehuaheuaheuahe uahue haueahuehauehaueh a",
+        texto : "lorem ipsum sic amet nostrum volupta",
         img : "",
     },
     habilidades : {
-        "comunicacao" :  ' AEAEAEAEA',
-        "critico" : 'AEAEAEA',
-        "colaboracao": 'AEAEAE',
-        "criatividade" : 'AEAEAEAEAE'
-    }
-}
+        "comunicacao" :  ' teste comunicação',
+        "critico" : 'teste critico',
+        "colaboracao": 'teste colaboração',
+        "criatividade" : 'teste criatividade'
+    } }
 
-let lancamento = {
+    let lancamento = {
     nome : "Lançamento do projeto",
     cont: 2,
-    desc: "uehauehauehauehaue auehau ehaue aue hauehaueaheuaheu aeua huaeauehaue h",
-    objetivos: ["lançar", "lançar", "lançar"],
-    atividades: ["programar", "programar", "programar"],
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, nihil necessitatibus explicabo dolor nostrum voluptas mollitia ipsum placeat quidem omnis officiis rerum porro minima ad odit ullam voluptate neque impedit.",
+    objetivos: ["teste", "teste", "teste"],
+    atividades: ["teste", "teste", "teste"],
     lembrete: {
-        texto : "lorem ipsum sic amet iaheuaheauehuaheuaheuahe uahue haueahuehauehaueh a",
+        texto : "lorem ipsum sic amet nostrum volupta",
         img : "",
     },
     habilidades : {
-        "comunicacao" :  '',
-        "critico" : '',
-        "colaboracao": '',
-        "criatividade" : ''
+        "comunicacao" :  ' teste comunicação',
+        "critico" : 'teste critico',
+        "colaboracao": 'teste colaboração',
+        "criatividade" : 'teste criatividade'
     }
-}
+ }
 
+    let producao = {
+    nome : "Produção",
+    cont: 4,
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, nihil necessitatibus explicabo dolor nostrum voluptas mollitia ipsum placeat quidem omnis officiis rerum porro minima ad odit ullam voluptate neque impedit.",
+    objetivos: ["teste", "teste", "teste"],
+    atividades: ["teste", "teste", "teste"],
+    lembrete: {
+        texto : "lorem ipsum sic amet nostrum volupta",
+        img : "",
+    },
+    habilidades : {
+        "comunicacao" :  ' teste comunicação',
+        "critico" : 'teste critico',
+        "colaboracao": 'teste colaboração',
+        "criatividade" : 'teste criatividade'
+    }
+ }
+
+ let apresentacao = {
+    nome : "Apresentações",
+    cont: 5,
+    desc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, nihil necessitatibus explicabo dolor nostrum voluptas mollitia ipsum placeat quidem omnis officiis rerum porro minima ad odit ullam voluptate neque impedit.",
+    objetivos: ["teste", "teste", "teste"],
+    atividades: ["teste", "teste", "teste"],
+    lembrete: {
+        texto : "lorem ipsum sic amet nostrum volupta",
+        img : "",
+    },
+    habilidades : {
+        "comunicacao" :  ' teste comunicação',
+        "critico" : 'teste critico',
+        "colaboracao": 'teste colaboração',
+        "criatividade" : 'teste criatividade'
+    }
+ }
 
 
 export const STEP = {
     "Introdução" : {nome: "Introdução"},
     "Planejamento" : planejamento,
     "Pesquisa" : pesquisa,
-    "Lançamento do projeto" : lancamento
+    "Lançamento do projeto" : lancamento,
+    "Produção" : producao,
+    "Apresentações" : apresentacao
 }
 

@@ -51,20 +51,20 @@ class Framework extends React.Component {
                 </div>
             )
         } else {
-        console.log(STEP[this.state.actualStep].habilidades[this.state.modal])
+        
         let stepSelected = STEP[this.state.actualStep]
-        console.log(stepSelected.habilidades)
-        console.log(this.state.modal)
-        let modal = this.state.modal ? stepSelected.habilidades[this.state.modal] : false;
+        let modal = this.state.modal ?
+            stepSelected.habilidades[this.state.modal] : 
+            false;
+        
         return(
-            
             <div className="framework-container">
                 <ProgressBar steps={PRBLSTEPS} actualStep={this.state.actualStep} click={this.changeStepClick} />
                 <StepBoard step={STEP[this.state.actualStep]}/>
                 <FourCbar step = {this.state.actualStep} modal={this.modalClickHandler} count= {STEP[this.state.actualStep]['cont']}/>
                 <Modal modalInfo={ modal } click={this.modalClickHandler}  skill={this.state.modal} step={this.state.actualStep}/>
             </div>
-        )
+         )
         }
     }
 
