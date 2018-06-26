@@ -28,7 +28,7 @@ class Framework extends React.Component {
         else {
             let skill = id.split('-')[1];
             
-            this.setState({modal: STEP[this.state.actualStep].habilidades[skill]})
+            this.setState({modal : skill})
         }
         
     }
@@ -45,6 +45,7 @@ class Framework extends React.Component {
         console.log(STEP[this.state.actualStep].habilidades[this.state.modal])
         let stepSelected = STEP[this.state.actualStep]
         console.log(stepSelected.habilidades)
+        console.log(this.state.modal)
         let modal = this.state.modal ? stepSelected.habilidades[this.state.modal] : false;
         return(
             
@@ -52,7 +53,7 @@ class Framework extends React.Component {
                 <ProgressBar steps={PRBLSTEPS} actualStep={this.state.actualStep} click={this.changeStepClick} />
                 <StepBoard step={STEP[this.state.actualStep]}/>
                 <FourCbar step = {this.state.actualStep} modal={this.modalClickHandler} count= {STEP[this.state.actualStep]['cont']}/>
-                <Modal modalInfo={ modal } click={this.modalClickHandler} />
+                <Modal modalInfo={ modal } click={this.modalClickHandler}  skill={this.state.modal} step={this.state.actualStep}/>
             </div>
         )
     }

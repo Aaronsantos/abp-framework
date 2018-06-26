@@ -22,7 +22,7 @@
     color: #3599b3;
 }
 
-.etapa .title+hr {
+.etapa .title+hr, #modal {
     width: 20%;
     margin: 0;
     border-width: 0;
@@ -216,8 +216,9 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(154,137,88,0.4); /* Black w/ opacity */
+    background-color: rgba(53,153,179,0.4); /* Black w/ opacity */ 
+    background-color: rgba(228, 149, 109, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding-top: 5%;
     padding-bottom: 5%;
     box-sizing: border-box;
@@ -231,10 +232,38 @@
       min-height: 90%;
       overflow-y: auto;
       box-sizing: border-box;
+      background-color: #f3f3f2;
+      border: 3px solid #40aab1;
+      border-bottom: 8px solid  #40aab1;
+      
+      /* padding: 2em; */
     
     }
+
+    .modalContent > header{
+        color: white;
+        background-color: #40aab1;
+        font-size: 2em;
+        font-style: italic; 
+        margin-bottom: 5px;
+        font-family: 'Playfair Display';
+        padding: 0.5em;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .modalContent > header > i {
+        font-size: 39px;
+    }
+
+    .modalContent > main {
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+    }
     
-    @media (max-width: 800px and min-width: 500px) {
+    @media (max-width: 800px ) {
 
 
         .etapas-barra > .opcoes-container > button {

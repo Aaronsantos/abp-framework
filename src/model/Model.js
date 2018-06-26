@@ -1,5 +1,11 @@
 
 export const PRBLSTEPS = [{nome: "Introdução", icone: "fas fa-book"}, {nome: "Planejamento", icone: "fas fa-clipboard-list"}, {nome:"Lançamento do projeto", icone: "far fa-paper-plane"}, {nome:"Pesquisa", icone: "fas fa-search"}, {nome:"Produção", icone: "fas fa-wrench"}, { nome:"Apresentações", icone: "far fa-eye"}];
+export const FOURC =  {
+    "comunicacao" :  {nome: "Comunicação", icone: "far fa-comments"},
+    "critico" :  {nome: "Pensamento Crítico", icone: "fas fa-puzzle-piece"},
+    "colaboracao":  {nome: "Colaboração", icone: "fas fa-people-carry"},
+    "criatividade" : {nome: "Criatividade", icone: "far fa-lightbulb"} 
+}
 
 let planejamento = {
     nome : "Planejamento",
@@ -14,7 +20,7 @@ let planejamento = {
     habilidades : {
         "comunicacao" :  ' AEAEAEAEA',
         "critico" : 'AEAEAEA',
-        "coolaboracao": 'AEAEAE',
+        "colaboracao": 'AEAEAE',
         "criatividade" : 'AEAEAEAEAE'
     }
 
@@ -33,7 +39,7 @@ let pesquisa = {
     habilidades : {
         "comunicacao" :  ' AEAEAEAEA',
         "critico" : 'AEAEAEA',
-        "coolaboracao": 'AEAEAE',
+        "colaboracao": 'AEAEAE',
         "criatividade" : 'AEAEAEAEAE'
     }
 }
@@ -51,7 +57,7 @@ let lancamento = {
     habilidades : {
         "comunicacao" :  '',
         "critico" : '',
-        "coolaboracao": '',
+        "colaboracao": '',
         "criatividade" : ''
     }
 }
