@@ -4,6 +4,7 @@ import FourCbar from './../FourCbar/FourCbar';
 import StepBoard from './../StepBoard/StepBoard';
 import Modal from './../Modal/Modal'
 import {PRBLSTEPS,STEP} from "./../model/Model"
+import Intro from "./../Intro/Intro"
 
 class Framework extends React.Component {
 
@@ -11,13 +12,13 @@ class Framework extends React.Component {
 
         super(props);
         this.state = {
-            actualStep: "Planejamento",
+            actualStep: "Introdução",
             modal: false
         }
     }
 
     componentDidMount() {
-        this.setState({actualStep: "Planejamento"})
+        this.setState({actualStep: "Introdução"})
     }  
 
     modalClickHandler = e => {
@@ -41,7 +42,15 @@ class Framework extends React.Component {
     render() {
 
 
-
+        if(this.state.actualStep === "Introdução") {
+            return(
+            
+                <div className="framework-container">
+                    <ProgressBar steps={PRBLSTEPS} actualStep={this.state.actualStep} click={this.changeStepClick} />
+                    <Intro step={STEP[this.state.actualStep]}/>
+                </div>
+            )
+        } else {
         console.log(STEP[this.state.actualStep].habilidades[this.state.modal])
         let stepSelected = STEP[this.state.actualStep]
         console.log(stepSelected.habilidades)
@@ -56,6 +65,7 @@ class Framework extends React.Component {
                 <Modal modalInfo={ modal } click={this.modalClickHandler}  skill={this.state.modal} step={this.state.actualStep}/>
             </div>
         )
+        }
     }
 
 

@@ -5,7 +5,7 @@ class ProgressBar extends Component {
 
     render() {
         let cont = 0;
-        return (<nav className="etapas-barra"> 
+        return (<nav className="etapas-barra animated slideInLeft"> 
             <h1> PRBL Framework</h1>
             <div className="opcoes-container">
             {

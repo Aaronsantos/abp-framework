@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class FourCbar extends Component {
     render() {
         return( 
-            <nav className="fCBar">
+            <nav className="fCBar animated slideInRight">
                 <h1> {this.props.count} </h1>
                 
                 <ul>

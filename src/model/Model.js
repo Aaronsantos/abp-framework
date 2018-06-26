@@ -65,6 +65,7 @@ let lancamento = {
 
 
 export const STEP = {
+    "Introdução" : {nome: "Introdução"},
     "Planejamento" : planejamento,
     "Pesquisa" : pesquisa,
     "Lançamento do projeto" : lancamento

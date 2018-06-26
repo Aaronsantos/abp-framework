@@ -83,6 +83,12 @@
     background: none;
     border: none;
     color: white;
+    text-decoration: none;
+}
+
+.etapas-barra > .opcoes-container > button:active {
+    border: none;
+    background-color: initial;
 }
 
 .etapas-barra > .opcoes-container > button:hover {
