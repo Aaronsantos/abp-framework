@@ -234,6 +234,133 @@
     
     }
     
+    @media (max-width: 800px and min-width: 500px) {
+
+
+        .etapas-barra > .opcoes-container > button {
+            font-size: 15px;
+        }
+
+        .etapas-barra > .opcoes-container > button > i {
+            font-size: 27px;
+        }
+        
+
+        .etapas-barra {
+            width: 20vw;
+            
+        }
+
+        .fCBar {
+            width: 15vw;
+        }
+        
+
+/* 
+        .etapa > .title, .etapa > .title + hr {
+            margin-left: 1em;
+        } */
+        .etapa {
+            width: 60vw;
+            height: auto;
+            margin-left: 22vw;
+        }
+
+        .etapa > .etapa-container {
+            height: auto;
+            margin: auto;
+        }
+
+        .etapa > .etapa-container {
+            flex-flow: column;
+            justify-content: space-around;
+        }
+
+        .etapa > .etapa-container > .card {
+            width: 80%;
+        }
+    }
+     
+    @media (max-width: 499px) {
+
+
+        .etapas-barra > .opcoes-container > button {
+            font-size: 10px;
+        }
+
+        .etapas-barra > .opcoes-container > button > i {
+            font-size: 20px;
+        }
+        
+
+        .etapas-barra {
+            width: 100vw;
+            height: 5em;
+        }
+
+        .etapas-barra > .opcoes-container {
+            flex-flow: row;
+        }
+
+        .fCBar {
+            width: 100vw;
+            height: 5em;
+            top: unset;
+            bottom: 0;
+            z-index: 1;
+            position: fixed;
+            top: auto;
+            display: flex;
+
+        }
+
+        .fCBar > ul {
+            flex-flow: row;
+            margin: 0;
+        }
+
+        .fCBar > ul > li {
+            font-size: 10px;
+        }
+
+        .fCBar > h1{ 
+            display: none;
+            font-size: 50px; 
+            margin: 0;
+        }
+        
+
+/* 
+        .etapa > .title, .etapa > .title + hr {
+            margin-left: 1em;
+        } */
+        .etapa {
+            width: 90vw;
+            height: auto;
+            margin: auto;
+            padding: 1em;
+            padding-top: 7em;
+            box-sizing: border-box;
+        }
+
+        .etapa > .etapa-container {
+           
+        }
+
+        .etapa > .etapa-container {
+            width: 100%;
+            flex-flow: column;
+            justify-content: space-around;
+            height: auto;
+            margin: auto;
+        }
+
+        .etapa > .etapa-container > .card {
+            width: 100%;
+        }
+    }
+     
+    
     /* .infoModal .modalContainer {
       display: flex;
       flex-flow: wrap;
