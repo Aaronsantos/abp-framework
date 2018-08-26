@@ -15,9 +15,9 @@
     box-sizing: border-box;
 }
 
-.etapa .title, .intro .title {
+.etapa .title {
     font-size: 39px;
-    font-style: italic; 
+    font-style: italic;
     margin-bottom: 5px;
     color: #3599b3;
 }
@@ -28,28 +28,34 @@
     border-width: 0;
     height: 3px;
     background-color: #3599b3;
-    color: #3599b3;    
+    color: #3599b3;
 }
 
 
 .intro {
-    width: 80%;
-    margin: auto;
+    width: 90%;
     margin-top: 3em;
+    margin: auto;
 }
 
+.intro > .title {
+  font-size: 2.2em; 
+}
 
 .intro > .definitions {
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
 }
 
 .intro > .definitions > .card {
-    width: 40%;
+    width: 45%;
+    background-color:  #a8c9ce;
+    height: 150px;
 }
 
 .intro p {
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 .intro > section {
@@ -61,11 +67,12 @@
 .etapa .etapa-container {
     margin-top: 30px;
     width: 68vw;
-    height: 100vh;
+    height: 80vh;
     
-    display: flex;  
+
+    display: flex;
     flex-flow: column wrap;
-    justify-content: flex-start;    
+    justify-content: flex-start;
 }
 
 .etapas-barra {
@@ -77,6 +84,15 @@
     justify-content: space-between;
     color: white;
     position: fixed;
+}
+
+.etapas-barra .logo  {
+    text-align: center;
+}
+
+.etapas-barra .logo img {
+    width: 8vw;
+    margin-top: 5px;
 }
 
 .fCBar {
@@ -98,7 +114,7 @@
     display: flex;
     height: 80%;
     flex-direction: column;
-    
+
 }
 
 .etapas-barra > .opcoes-container > button {
@@ -126,8 +142,8 @@
 }
 
 .etapas-barra > .opcoes-container > button  i {
-    font-size: 30px;
-    margin-bottom: 3px; 
+    font-size: 1.4em;
+    margin-bottom: 3px;
 }
 
 .etapas-barra > .opcoes-container > .selectedStep {
@@ -146,7 +162,7 @@
     padding: 1em;
     box-sizing: border-box;
     height: fit-content;
-    display: inline-block;   
+    display: inline-block;
 }
 
 .etapa> .etapa-container> .card> .title {
@@ -168,42 +184,58 @@
 
 .desc {
     color: #8d909a;
+    min-height: 210px;
 }
 
 .atividades {
     background-color:#3fa8b2;
-    padding: 0;
     color: white;
 }
 
-.atividades > .title, .atividades > .title+ hr {
-    margin-left: 1em;
-}
+
 
 .lembrete {
     background-color: #e4956d;
     min-height: 250px;
     color: white;
+    
 }
 
-.objetivos ul {
+
+.lembrete p  {
+    text-align: center; 
+}
+
+.lembrete i {
+    font-size: 5em;
+    text-align: center;
+    margin-left: 2em;
+    margin-bottom: 18px;
+}
+
+.lembrete img {
+    height: 30%;
+
+}
+
+.objetivos ul, .atividades ul {
     margin-left: 10px;
 }
 
-.objetivos >ul > li {
+.objetivos >ul > li, .atividades >ul >li {
     margin-bottom: 1.3em;
     border-left: solid 2px #edf0f1;
     padding-left: 1em;
     min-height: 2em;
 }
 
-.atividades > ul > li {
-    
+/* .atividades > ul > li {
+
     border-top: 2px solid #edf0f1;
     min-height: 3em;
-    padding: 0.9em 0 0 2em;
+    padding: 0.9em 0 0.9em 2em;
     box-sizing: border-box;
-}
+} */
 
 .fCBar > h1 {
     font-family: 'Playfair Display';
@@ -221,12 +253,12 @@
 }
 
 .fCBar > ul > li {
-    height: 15%; 
+    height: 15%;
     font-weight: bolder;
     width: 100%;
     padding-top: 30px;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -249,7 +281,7 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(53,153,179,0.4); /* Black w/ opacity */ 
+    background-color: rgba(53,153,179,0.4); /* Black w/ opacity */
     background-color: rgba(228, 149, 109, 0.8);
     background-color: rgba(255, 255, 255, 0.8);
     padding-top: 5%;
@@ -257,7 +289,7 @@
     box-sizing: border-box;
     transition: all 0.5s;
     }
-    
+
     .modalContent{
       width: 70%;
       margin: auto;
@@ -269,15 +301,16 @@
       border: 3px solid #40aab1;
       border-bottom: 8px solid  #40aab1;
       
+
       /* padding: 2em; */
-    
+
     }
 
     .modalContent > header{
         color: white;
         background-color: #40aab1;
         font-size: 2em;
-        font-style: italic; 
+        font-style: italic;
         margin-bottom: 5px;
         font-family: 'Playfair Display';
         padding: 0.5em;
@@ -294,31 +327,39 @@
         width: 100%;
         padding: 1em;
         box-sizing: border-box;
+        text-align: center;
+        color: #8d909a;
     }
-    
+
+    .modalContent > main >p {
+        font-size: 1.5em;
+        margin-top: 4em;
+        
+    }
+
     @media (max-width: 800px ) {
 
 
         .etapas-barra > .opcoes-container > button {
-            font-size: 15px;
+            font-size: 13px
         }
 
         .etapas-barra > .opcoes-container > button > i {
-            font-size: 27px;
+            /*font-size: 27px;*/
         }
-        
+
 
         .etapas-barra {
             width: 20vw;
-            
+
         }
 
         .fCBar {
             width: 15vw;
         }
-        
 
-/* 
+
+/*
         .etapa > .title, .etapa > .title + hr {
             margin-left: 1em;
         } */
@@ -342,7 +383,7 @@
             width: 80%;
         }
     }
-     
+
     @media (max-width: 499px) {
 
 
@@ -353,7 +394,7 @@
         .etapas-barra > .opcoes-container > button > i {
             font-size: 20px;
         }
-        
+
 
         .etapas-barra {
             width: 100vw;
@@ -385,14 +426,14 @@
             font-size: 10px;
         }
 
-        .fCBar > h1{ 
+        .fCBar > h1{
             display: none;
-            font-size: 50px; 
+            font-size: 50px;
             margin: 0;
         }
-        
 
-/* 
+
+/*
         .etapa > .title, .etapa > .title + hr {
             margin-left: 1em;
         } */
@@ -406,7 +447,7 @@
         }
 
         .etapa > .etapa-container {
-           
+
         }
 
         .etapa > .etapa-container {
@@ -421,8 +462,8 @@
             width: 100%;
         }
     }
-     
-    
+
+
     /* .infoModal .modalContainer {
       display: flex;
       flex-flow: wrap;
@@ -431,6 +472,5 @@
       padding-top: 2em;
       width: 80%;
       margin: auto;
-    
+
     } */
-    

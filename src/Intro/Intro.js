@@ -4,22 +4,29 @@ export default ({ step }) => {
     return ( 
 
         <main className="etapa">
-            <h2 className="title" > Introdução </h2>
-            <hr />
+            
+            
             
             <div className="intro">
+        <h2 className="title" > Introdução </h2>
             <section>
                 <p> Aprendizagem Baseada em projetos (ABP) é uma metodologia ativa de ensino, que busca desenvolver o processo de ensino-aprendizagem por meio da aplicação de projetos envolvendo problemas e desafios autênticos e realistas, incentivando autonomia, trabalho em equipe e criatividade no processo de aprendizagem.  </p>
                 <p> A ABP se diferencia do simples uso de projeto como ferramenta didática pois prevê uma série de requisitos e atividades para uma aplicação eficaz, o projeto não é uma simples aplicação dos conceitos teóricos  mas o caminho para construção e compreensão destas e outras habilidades. </p>
                 <p> Os projetos variam em complexidade, nível de autonomia dos estudantes e extensão. Sendo em grande parte práticas de longo prazo (de 4 semanas à 1 semestre ou 1 ano).</p>
             </section>
+
+            <h2 className="title" > Definições </h2>
+            
+            
             <section class="definitions">
                 <div className="card">
                     <h1> Âncora: </h1> 
                     Contexto do mundo real na qual o projeto vai se situar. pode ser apresentada de várias maneiras, correspondências, matérias jornalísticas, um problema comunitário, etc.
 
                 </div>
-
+                
+                
+            
                 <div className="card">
                 <h1> Questão direcionadora: </h1> 
                 A âncora apresenta um ambiente amplo, já as questões direcionadoras devem ser objetivas e concisas, elas  irão nortear os estudantes a que tipo investigação realizar e que habilidades/conhecimentos devem ser desenvolvidos.

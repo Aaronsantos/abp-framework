@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import logo from '../assets/img/logo.png';
 
 class ProgressBar extends Component {
 
-
     render() {
-        let cont = 0;
+        let cont = 1;
         return (<nav className="etapas-barra animated slideInLeft"> 
-            <h1> PRBL Framework</h1>
+            <h1 class="logo"><img  src={logo} alt="ABP framework"/></h1>
             <div className="opcoes-container">
             {
                 this.props.steps.map( step => {
